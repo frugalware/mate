@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-system-monitor
-pkgver=1.9.0
+pkgver=1.9.2
 pkgrel=1
 pkgdesc="The MATE System Monitor"
 archs=('i686' 'x86_64')
@@ -14,6 +14,6 @@ makedepends=('mate-common' 'intltool' 'itstool')
 _F_mate_glib="y"
 Finclude mate mate-scriptlet
 Fconfopts+=" --with-help-formats=txt --with-gtk=3.0"
-sha1sums=('773d6aff33737645740b06a722061e2591b2d99a')
+sha1sums=('f612954fcfbbaa66d759e478fcb98bb695dc0971')
 
 # optimization OK
