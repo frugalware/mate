@@ -1,10 +1,10 @@
-# Compiling Time: 0.83 SBU
+# Compiling Time: 0.84 SBU
 # Maintainer: Melko <melko@frugalware.org>
 
 options+=('asneeded')
 
 pkgname=kactivities
-pkgrel=2
+pkgrel=1
 pkgdesc="KDE API for using and interacting with Activities."
 groups=('kde')
 archs=('i686' 'x86_64')

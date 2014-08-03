@@ -1,10 +1,10 @@
-# Compiling Time: 32.21 SBU
+# Compiling Time: 32.22 SBU
 # Maintainer: Melko <melko@frugalware.org>
 
 options+=('asneeded')
 
 pkgname=kdepim
-pkgrel=2
+pkgrel=1
 pkgdesc="KDE PIM Utilities."
 groups=('kde-extra')
 replaces=('klibido' 'taskjuggler' "$pkgname-wizards" "$pkgname-strigi-analyzer" "$pkgname-mobile")

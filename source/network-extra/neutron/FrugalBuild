@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=neutron
-pkgver=2014.1.1
+pkgver=2014.2.b2
 pkgrel=1
 pkgdesc="Neutron is a virtual network service for Openstack previously known as 'Quantum'"
 archs=('x86_64')
@@ -16,9 +16,10 @@ depends=('python-neutronclient' 'python-anyjson' 'python-paste' 'python-paste-de
 	'python-kombu' 'lxml' 'python-netaddr'  'python-routes'  'sqlalchemy' \
 	'pyudev' 'python-webob' 'python-amqplib')
 makedepends=('python-distribute')
-_F_launchpad_branch="icehouse"
+_F_launchpad_branch="juno"
+_F_launchpad_subdir="juno-2"
 Finclude launchpad
-sha1sums=('4beadc95eac7a969b843e7db284b3c33b8bb9371')
+sha1sums=('b08ae4d5e233df56b88bfc91bb063de72ae82c0e')
 
 build(){
 	Fbuild

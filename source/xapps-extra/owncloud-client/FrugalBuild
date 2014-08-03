@@ -3,7 +3,7 @@
 
 pkgname=owncloud-client
 _F_archive_name="mirall"
-pkgver=1.6.0
+pkgver=1.6.2
 pkgrel=1
 pkgdesc="ownCloud client based on mirall"
 url="http://owncloud.org"
@@ -20,7 +20,7 @@ up2date="lynx -dump http://owncloud.org/sync-clients | sed '/beta/d' | Flasttar"
 source=(http://download.owncloud.com/desktop/stable/$_F_archive_name-$pkgver.tar.bz2)
 _F_cmake_confopts="-DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INCLUDE_PATH=/usr/include/ocsync -DCMAKE_INSTALL_SYSCONFDIR=/etc/${pkgname}"
 Finclude cmake
-sha1sums=('fbc3af65c9fde51b5d7c48d7161108c25cabe701')
+sha1sums=('678be5a0719ec7ef2d4d8da802bff71905fb1f0f')
 
 build() {
 	Fcd

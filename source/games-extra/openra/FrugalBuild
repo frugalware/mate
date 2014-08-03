@@ -5,7 +5,7 @@
 options+=('asneeded')
 
 pkgname=openra
-pkgver=20140608
+pkgver=20140722
 pkgrel=1
 pkgdesc="An open-source implementation of the Red Alert engine using .NET/mono and OpenGL"
 url="http://openra.res0l.net/"
@@ -20,12 +20,11 @@ options=('nostrip')
 groups=('games-extra')
 archs=('i686' 'x86_64')
 up2date="$up2date | sed 's/release_//'"
-sha1sums=('1d484dc94aa1c524d513384d731090eabed9cd7a')
+sha1sums=('27472258a5db175ee0d81585b7af22f7f95d6110')
 
 
 build()
 {
-	Funpack_github
 	Fcd OpenRA-release-$pkgver
 	Fsed "prefix ?= /usr/local" "prefix ?= /usr" Makefile
 	Fsed 'gameinstalldir ?= $(libdir)/openra' 'gameinstalldir ?= $(datadir)/openra' Makefile
