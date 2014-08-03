@@ -1,13 +1,9 @@
 MATE packages building order
 
 mate-common
-mate-doc-utils
 mate-desktop
 libmatenotify
-libmatekeyring
-mate-keyring
 libmatekbd
-libmatewnck
 libmateweather
 mate-icon-theme
 mate-dialogs
