@@ -5,8 +5,8 @@
 options+=('asneeded')
 
 pkgname=gogglesmm
-pkgver=0.13.1
-pkgrel=5
+pkgver=0.13.3
+pkgrel=1
 pkgdesc="Music Manager and Player"
 url="http://gogglesmm.github.io/"
 depends=('fox>=1.7.46' 'libxext' 'libxrender' 'libglu' 'xine-lib>=1.2.2-5' \
@@ -17,5 +17,5 @@ Finclude gnome-scriptlet
 groups=('xapps-extra')
 archs=('i686' 'x86_64')
 source=(https://github.com/gogglesmm/gogglesmm/archive/$pkgver.tar.gz)
-sha1sums=('cc887dc8f19cd412ee0032784801e825d0d07355')
+sha1sums=('4bdf569fe9678c2857dbc88f1ea77dca9580f1e1')
 replaces=('musicmanager')
