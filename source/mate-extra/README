@@ -1,15 +1,16 @@
 MATE packages building order
+===========================
 
+Base packages
+------------
 mate-common
 mate-desktop
-libmatenotify
 libmatekbd
 libmateweather
 mate-icon-theme
-mate-dialogs
-mate-file-manager
+caja
 mate-polkit
-mate-window-manager
+marco
 mate-settings-daemon
 mate-session-manager
 mate-menus
@@ -17,11 +18,32 @@ mate-panel
 mate-backgrounds
 mate-themes
 mate-notification-daemon
-mate-image-viewer
 mate-control-center
 mate-screensaver
-mate-file-archiver
 mate-media
 mate-power-manager
 mate-system-monitor
+
+Extra apps
+---------
+atril
+caja-dropbox
+caja-extensions
+engrampa
+eom
+mate-applets
 mate-icon-theme-faenza
+mate-netspeed
+mate-sensors-applet
+mate-terminal
+mate-user-share
+mate-utils
+mozo
+pluma
+python-caja
+
+Remove packages
+---------------
+mate-calc: replaced by galculator
+mate-dialogs
+mate-system-tools
