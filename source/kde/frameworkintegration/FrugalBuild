@@ -11,6 +11,6 @@ archs=('i686' 'x86_64')
 _F_kde_project="frameworks"
 Finclude kde
 depends=("kio>=$_F_kde_ver")
-sha1sums=('b5363ea7ac580821db9d48f3e93bfcb25381c125')
+sha1sums=('0c503bd5db34ff6ef5ee19b9ee0f5ca900bf8463')
 
 # optimization OK

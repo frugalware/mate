@@ -3,11 +3,11 @@
 # Contributor: bouleetbil <bouleetbil@frogdev.info>
 
 pkgname=icalendar
-pkgver=2.1.0
+pkgver=2.2.0
 pkgrel=1
 pkgdesc="Internet calendaring, Ruby style"
 url="http://icalendar.rubyforge.org/"
 groups=('devel-extra')
 archs=('i686' 'x86_64')
 Finclude gem
-sha1sums=('cf481554e3f7aa3522b46722112801120ad35cc4')
+sha1sums=('589920d77ad36a34596af6c409a73ab08fe9f3f8')

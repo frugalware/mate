@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=kimageformats
-pkgrel=2
+pkgrel=1
 pkgdesc="Image format plugins."
 groups=('kde')
 archs=('i686' 'x86_64')
@@ -12,6 +12,6 @@ _F_kde_project="frameworks"
 Finclude kde
 depends=("libqt5printsupport>=$_F_kde_qtver" 'openexr>=2.2.0' 'jasper')
 makedepends=("${makedepends[@]}" 'qt5-linguist' 'libqt5x11extras')
-sha1sums=('2e7a531fc08fc63ee652f5f52addf384105587a9')
+sha1sums=('650e8157b2c9a1ca2a95200876b383e768800ad5')
 
 # optimization OK

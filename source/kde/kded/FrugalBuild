@@ -12,6 +12,6 @@ _F_kde_project="frameworks"
 Finclude kde
 depends=("kinit>=$_F_kde_ver")
 makedepends=("${makedepends[@]}" 'kdoctools')
-sha1sums=('f1740090c171555ec931021e44f43b2b8709421d')
+sha1sums=('6fd7be655bbe0fcbcbfc2e0a5e80e4fdd8a57486')
 
 # optimization OK

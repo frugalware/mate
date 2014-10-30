@@ -12,6 +12,6 @@ _F_kde_project="frameworks"
 Finclude kde
 depends=("libqt5x11extras>=$_F_kde_qtver")
 makedepends=("${makedepends[@]}" 'qt5-linguist')
-sha1sums=('9c326a07eb83a66d814288ef233f3b559991385e')
+sha1sums=('2644b8a7cc5e2ac8099ca8acdc39f1a4f2a47df6')
 
 # optimization OK

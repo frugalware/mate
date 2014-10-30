@@ -1,10 +1,10 @@
-# Compiling Time: 32.22 SBU
+# Compiling Time: 32.23 SBU
 # Maintainer: Melko <melko@frugalware.org>
 
 options+=('asneeded')
 
 pkgname=kdepim
-pkgrel=1
+pkgrel=3
 pkgdesc="KDE PIM Utilities."
 groups=('kde-extra')
 replaces=('klibido' 'taskjuggler' "$pkgname-wizards" "$pkgname-strigi-analyzer" "$pkgname-mobile")
@@ -17,6 +17,8 @@ Finclude kde
 depends=()
 makedepends=("${makedepends[@]}" 'boost>=1.50.0' "kdelibs>=$_F_kde_ver" "kdepimlibs-compiletime>=${_F_kde_ver}" "docbook-xsl" \
 	"libdbusmenu-qt>=0.7.0" "soprano-backend-redland>=2.7.0" "kdepimlibs>=$_F_kde_ver" "kdelibs-compiletime>=$_F_kde_ver" "kactivities")
+source=("${source[@]}" 0001-Fix-crash-on-logout.patch 0002-Delete-the-part-from-the-mainwindow-not-from-the-mai.patch)
+sha1sums=("${sha1sums[@]}" 'f8c7d5b86d2b243e4bb83744f54566e8d1748ec8' 'fa5423d224131620b4982acfddef81dde0656100')
 
 subpkgs=("${subpkgs[@]}" "akonadiconsole")
 subdescs=("${subdescs[@]}" "Akonadi Management and Debugging Console.")
@@ -203,7 +205,7 @@ subreplaces=("${subreplaces[@]}" '')
 
 subpkgs=("${subpkgs[@]}" "$pkgname-core")
 subdescs=("${subdescs[@]}" "Core files for KDE PIM.")
-subdepends=("${subdepends[@]}" "libkimap>=$_F_kde_ver libktnef>=$_F_kde_ver libkgapi>=2.1.1")
+subdepends=("${subdepends[@]}" "libkimap>=$_F_kde_ver libktnef>=$_F_kde_ver libkgapi>=2.2.0")
 subrodepends=("${subrodepends[@]}" "$pkgname-message>=$_F_kde_ver $pkgname-calendarsupport>=$_F_kde_ver kincidenceeditor>=$_F_kde_ver")
 subgroups=("${subgroups[@]}" 'kde-extra')
 subarchs=("${subarchs[@]}" 'i686 x86_64')

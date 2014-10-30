@@ -12,6 +12,6 @@ _F_kde_project="frameworks"
 Finclude kde
 depends=("libqt5webkit>=$_F_kde_qtver" "kparts>=$_F_kde_ver")
 makedepends=("${makedepends[@]}" 'libqt5x11extras')
-sha1sums=('29611a2546044e16cb58828f8325736c9411ce35')
+sha1sums=('bfbd77874ea822570a644a868511a8f2ca444477')
 
 # optimization OK
