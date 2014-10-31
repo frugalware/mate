@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=libmateweather
-pkgver=1.9.0
+pkgver=1.9.1
 pkgrel=1
 pkgdesc="Librairies to allow MATE Desktop to display weather information"
 archs=('i686' 'x86_64')
@@ -17,6 +17,6 @@ _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
 Fconfopts+=" --with-gnu-ld --enable-python --enable-gtk-doc-html --with-gtk=3.0"
-sha1sums=('c7f89955e55eb71dd4c6dc3ce54f29abb7c7460b')
+sha1sums=('d7b743e0678a99dfd4689adbd9212e3af2a1e4dd')
 
 # optimization OK
