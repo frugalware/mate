@@ -5,7 +5,7 @@ options+=('asneeded')
 
 pkgname=mate-panel
 pkgver=1.9.1
-pkgrel=1
+pkgrel=2
 pkgdesc="The MATE Desktop panel applets"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
@@ -19,9 +19,7 @@ _F_mate_glib="y"
 __F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-source=($source libcanberra.patch)
-sha1sums=('14638b86446baa7cfd423de5753cb5fd994b7984' \
-          '7712b526d5de7288b52bf46896e152711366c6a4')
+sha1sums=('14638b86446baa7cfd423de5753cb5fd994b7984')
 Fconfopts+=' --enable-network-manager --with-gtk=3.0'
 
 # optimization OK
