@@ -5,7 +5,7 @@ options+=('asneeded')
 
 pkgname=mate-control-center
 pkgver=1.9.0
-pkgrel=1
+pkgrel=2
 pkgdesc="The MATE Control center"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
@@ -20,5 +20,12 @@ Finclude mate mate-scriptlet
 Fconfopts+=" --with-help-formats=txt --with-gtk=3.0"
 sha1sums=('bec4ccbaa1167e074e84696c0606bd7c5a20c503')
 
+build()
+{
+	Fcd
+	Fbuild
+	Frm usr/share/applications/mimeinfo.cache
+	Fbuild_mate_scriptlet
+}
 
 # optimization OK
