@@ -5,7 +5,7 @@ options+=('asneeded')
 
 pkgname=mate-icon-theme
 pkgver=1.9.0
-pkgrel=1
+pkgrel=2
 pkgdesc="The MATE icons theme"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
