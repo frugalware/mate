@@ -4,16 +4,16 @@
 options+=('asneeded')
 
 pkgname=mate-system-monitor
-pkgver=1.8.0
-pkgrel=2
+pkgver=1.9.0
+pkgrel=1
 pkgdesc="The MATE System Monitor"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('mate-icon-theme' 'gtkmm2' 'libgtop' 'dbus-glib' 'librsvg' 'libxml2' 'libwnck2' 'gtkmm')
+depends=('mate-icon-theme' 'gtkmm' 'libgtop' 'dbus-glib' 'librsvg' 'libxml2' 'libwnck')
 makedepends=('mate-common' 'intltool' 'itstool')
 _F_mate_glib="y"
 Finclude mate mate-scriptlet
-Fconfopts+=" --with-help-formats=txt --with-gtk=2.0"
-sha1sums=('a8f652340613154fac994cdc060bae95460c1d6f')
+Fconfopts+=" --with-help-formats=txt --with-gtk=3.0"
+sha1sums=('773d6aff33737645740b06a722061e2591b2d99a')
 
 # optimization OK
