@@ -4,8 +4,8 @@
 options=('asneeded')
 
 pkgname=mate-power-manager
-pkgver=1.8.0
-pkgrel=2
+pkgver=1.9.0
+pkgrel=1
 pkgdesc="MATE power management service"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
@@ -15,14 +15,7 @@ _F_mate_desktop="y"
 _F_mate_iconcache="y"
 _F_mate_glib="y"
 Finclude mate mate-scriptlet
-sha1sums=('5cde22f2d6498294a76e3bf9005b4f73bbdd0db8')
-Fconfopts+=' --with-gtk=2.0'
+sha1sums=('3653add02e09679763fd98f8443cedb1557a4429')
+Fconfopts+=' --with-gtk=3.0'
 
-build()
-{
-	Fcd
-	Fsed "canberra-gtk.h" "canberra-gtk2.h" src/gpm-manager.c
-	Fbuild
-	Fbuild_mate_scriptlet
-}
 # optimization OK
