@@ -1,0 +1,18 @@
+# Compiling Time: 0.13 SBU
+# Maintainer: Anthony Jorion <pingax@frugalware.org>
+
+options+=('asneeded')
+
+pkgname=libmatemixer
+pkgver=1.9.0
+pkgrel=1
+pkgdesc="A mixer library for MATE"
+archs=('i686' 'x86_64')
+groups=('mate-extra')
+depends=('libpulse' 'alsa-lib')
+makedepends=('mate-common')
+Finclude mate
+sha1sums=('d3d79bed410d1ab734ef6b5c8d04e9e409ec910c')
+Fconfopts+="  --enable-pulseaudio --enable-alsa"
+
+# optimization OK
