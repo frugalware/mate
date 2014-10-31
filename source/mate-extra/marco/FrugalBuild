@@ -10,7 +10,7 @@ pkgdesc="The MATE Desktop window manager"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
 depends=('gtk+3' 'zenity')
-makedepends=('desktop-file-utils' 'gsettings-desktop-schemas' 'libcanberra-gtk2' \
+makedepends=('desktop-file-utils' 'gsettings-desktop-schemas' 'libcanberra-gtk' \
 	'mate-common' 'libsm' 'libsoup' 'libxdamage' \
 	'intltool' 'pkgconfig' 'itstool')
 rodepends=('gtk+3-theme-frugalware')
