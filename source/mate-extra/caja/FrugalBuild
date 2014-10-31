@@ -4,21 +4,21 @@
 options+=('asneeded')
 
 pkgname=caja
-pkgver=1.8.1
+pkgver=1.9.2
 pkgrel=1
 pkgdesc="Caja - the MATE File Manager"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
 depends=('libexif' 'exempi' 'mate-icon-theme' 'shared-mime-info' 'desktop-file-utils' \
-	'gvfs' 'unique' 'mate-desktop' 'gobject-introspection' 'gail')
+	'gvfs' 'unique' 'mate-desktop>=1.9.2' 'gobject-introspection' 'gail')
 makedepends=('intltool' 'mate-common')
 _F_mate_desktop="y"
 _F_mate_mime="y"
 _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-Fconfopts+=" --libexecdir=/usr/lib/caja --enable-unique --with-gtk=2.0"
-sha1sums=('fcb8ab7b237fe8b1bd834dbdcbbd92f5aa210413')
+Fconfopts+=" --libexecdir=/usr/lib/caja --enable-unique --with-gtk=3.0"
+sha1sums=('526d75a7f2f57e3bf76955c385ee4cbbafaf8762')
 provides=('mate-file-manager')
 conflicts=('mate-file-manager')
 replaces=('mate-file-manager')
