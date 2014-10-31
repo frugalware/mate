@@ -5,7 +5,7 @@ options+=('asneeded')
 
 pkgname=marco
 pkgver=1.9.2
-pkgrel=1
+pkgrel=2
 pkgdesc="The MATE Desktop window manager"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
