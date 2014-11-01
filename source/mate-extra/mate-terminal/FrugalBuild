@@ -4,17 +4,18 @@
 options+=('asneeded')
 
 pkgname=mate-terminal
-pkgver=1.8.0
+pkgver=1.9.0
 pkgrel=1
 pkgdesc="The MATE terminal"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('vte' 'dconf')
+depends=('vte3' 'dconf' 'mate-desktop')
 makedepends=('mate-common' 'intltool' 'itstool')
 _F_mate_desktop="y"
 _F_mate_glib="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-sha1sums=('14b380c71aaf73499f5ae292ee14d2eb27920074')
+sha1sums=('931f72e45268ceab473ce93f49fd5b9e3be9007e')
+Fconfopts+=" --with-gtk=3.0"
 
 # optimization OK
