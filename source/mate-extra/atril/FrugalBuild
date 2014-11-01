@@ -4,22 +4,23 @@
 options+=('asneeded')
 
 pkgname=atril
-pkgver=1.8.0
+pkgver=1.9.0
 pkgrel=1
 pkgdesc="The MATE Document viewer"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('gtk+2' 'gail' 'mate-icon-theme' 'mate-file-manager' \
-	'poppler-glib')
+depends=('gtk+3' 'gail' 'mate-icon-theme' 'mate-file-manager' \
+	'poppler-glib' 'webkit-gtk3')
 makedepends=('mate-common' 'intltool' 'itstool')
 _F_mate_desktop="y"
 _F_mate_glib="y"
 _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-sha1sums=('8327437ba12df61326b83342cea746d1764727d0')
+sha1sums=('0625782a6152d99606c7209a4b8ca14b818e15f9')
 replaces=('mate-document-viewer')
 provides=('mate-document-viewer')
 conflicts=('mate-document-viewer')
+Fconfopts+=" --with-gtk=3.0"
 
 # optimization OK
