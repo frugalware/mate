@@ -4,17 +4,18 @@
 options+=('asneeded')
 
 pkgname=pluma
-pkgver=1.8.1
+pkgver=1.9.0
 pkgrel=1
 pkgdesc="Mate text editor"
 groups=('mate-extra')
 archs=('i686' 'x86_64')
-depends=('enchant' 'iso-codes' 'gtksourceview')
+depends=('enchant' 'iso-codes' 'gtksourceview3' 'mate-desktop')
 makedepends=('mate-common' 'intltool' 'itstool')
 _F_mate_glib="y"
 _F_mate_desktop="y"
 Finclude mate mate-scriptlet
-sha1sums=('3bd3f7a5197ac96db9142a7f3bb9a10009312c22')
+sha1sums=('b0813771b793a01266d83fb575601edb2bb11ade')
 provides=('mate-text-editor')
+Fconfopts+="  --with-gtk=3.0"
 replaces=($provides[@])
 conflicts=($provides[@])
