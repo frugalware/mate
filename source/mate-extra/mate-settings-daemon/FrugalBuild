@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-settings-daemon
-pkgver=1.9.3
+pkgver=1.9.4
 pkgrel=1
 pkgdesc="MATE Desktop settings daemon"
 archs=('i686' 'x86_64')
@@ -19,6 +19,6 @@ options=('scriptlet')
 Finclude mate mate-scriptlet
 Fconfopts+=" --enable-polkit --with-gnu-ld --with-x --with-nssdb
 	     --enable-gstreamer --with-gtk=3.0"
-sha1sums=('57a1b2b6a2c0128e14c855edd0ca20c3f66a16f9')
+sha1sums=('3b0d74ff2c78de7136dfc68a79bf4ce1637ff0f8')
 
 # optimization OK
