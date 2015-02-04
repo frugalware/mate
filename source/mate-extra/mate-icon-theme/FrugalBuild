@@ -4,8 +4,8 @@
 options+=('asneeded')
 
 pkgname=mate-icon-theme
-pkgver=1.9.0
-pkgrel=2
+pkgver=1.9.1
+pkgrel=1
 pkgdesc="The MATE icons theme"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
@@ -14,4 +14,4 @@ makedepends=('mate-common' 'intltool')
 _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-sha1sums=('be43fb2914eec5619dd8c606cb98fb5c54b5a217')
+sha1sums=('0a1f333f21dfe835ae27216938a564df6cd4cc48')
