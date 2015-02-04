@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-desktop
-pkgver=1.9.3
+pkgver=1.9.4
 pkgrel=1
 pkgdesc="Library with common API for various MATE modules"
 archs=('i686' 'x86_64')
@@ -18,7 +18,7 @@ _F_mate_desktop="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
 Fconfopts+=" --with-gtk=3.0"
-sha1sums=('0c8c4b37742805e6a6bfa78f3f8fe5f74e0bbd44')
+sha1sums=('9f48dc440e240e5be048373f3011cf5d5273df86')
 replaces=('libmatekeyring' 'mate-doc-utils' 'mate-keyring' \
 	'libmatewnck' 'mate-character-map')
 
