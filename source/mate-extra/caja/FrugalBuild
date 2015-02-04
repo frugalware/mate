@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=caja
-pkgver=1.9.2
+pkgver=1.9.4
 pkgrel=1
 pkgdesc="Caja - the MATE File Manager"
 archs=('i686' 'x86_64')
@@ -18,7 +18,4 @@ _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
 Fconfopts+=" --libexecdir=/usr/lib/caja --enable-unique --with-gtk=3.0"
-sha1sums=('526d75a7f2f57e3bf76955c385ee4cbbafaf8762')
-provides=('mate-file-manager')
-conflicts=('mate-file-manager')
-replaces=('mate-file-manager')
+sha1sums=('40f909c271773561d090063c78b9a58e3d310f1d')
