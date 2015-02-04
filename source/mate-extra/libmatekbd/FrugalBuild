@@ -4,8 +4,8 @@
 options+=('asneeded')
 
 pkgname=libmatekbd
-pkgver=1.9.1
-pkgrel=2
+pkgver=1.9.2
+pkgrel=1
 pkgdesc="Librairies for MATE kbd"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
@@ -16,7 +16,7 @@ _F_mate_glib="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
 Fconfopts+=" --with-gtk=3.0"
-sha1sums=('ce3fda069ba85b529dd1e36d898eb0050bdd9c08')
+sha1sums=('5bfd3c15835483a1b32b0a6071bb6a120e27c2f0')
 
 
 # optimization OK
