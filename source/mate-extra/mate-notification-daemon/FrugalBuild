@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-notification-daemon
-pkgver=1.9.0
+pkgver=1.9.1
 pkgrel=1
 pkgdesc="Notification daemon for MATE Desktop"
 archs=('i686' 'x86_64')
@@ -17,5 +17,5 @@ _F_mate_glib="y"
 _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-sha1sums=('2922699ed6a7fca7de928c5bd519bdac7ff17310')
+sha1sums=('5496adddea4f16fac10651a84a89f61cd2e59208')
 Fconfopts+=' --with-gtk=3.0'
