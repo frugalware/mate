@@ -2,7 +2,7 @@
 # Maintainer: Anthony Jorion <pingax@frugalware.org>
 
 pkgname=mate-backgrounds
-pkgver=1.9.0
+pkgver=1.9.1
 pkgrel=1
 pkgdesc="A set of wallpapers for the MATE Desktop"
 archs=('i686' 'x86_64')
@@ -10,4 +10,4 @@ groups=('mate-extra')
 depends=()
 makedepends=('mate-common' 'intltool')
 Finclude mate
-sha1sums=('288df15f04513e71abd8752b49b4a95562d1bd71')
+sha1sums=('476f19652dca5e55df651a4625b3991626684b03')
