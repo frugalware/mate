@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=libmatemixer
-pkgver=1.9.0
+pkgver=1.9.2
 pkgrel=1
 pkgdesc="A mixer library for MATE"
 archs=('i686' 'x86_64')
@@ -12,7 +12,7 @@ groups=('mate-extra')
 depends=('libpulse' 'alsa-lib')
 makedepends=('mate-common' 'intltool')
 Finclude mate
-sha1sums=('d3d79bed410d1ab734ef6b5c8d04e9e409ec910c')
+sha1sums=('c85b2179bf9bb4c8feb41714c3915993d0c183a7')
 Fconfopts+="  --enable-pulseaudio --enable-alsa"
 
 # optimization OK
