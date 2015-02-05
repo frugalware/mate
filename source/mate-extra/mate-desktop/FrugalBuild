@@ -5,7 +5,7 @@ options+=('asneeded')
 
 pkgname=mate-desktop
 pkgver=1.9.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Library with common API for various MATE modules"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
