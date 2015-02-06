@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=eom
-pkgver=1.9.0
+pkgver=1.9.1
 pkgrel=1
 pkgdesc="Eye of MATE image viewer"
 archs=('i686' 'x86_64')
@@ -17,7 +17,7 @@ _F_mate_glib="y"
 _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-sha1sums=('9a3365296c526a611a8fb952194b7e790629cdeb')
+sha1sums=('309fa9fcf373298637a9bc87677dfa7c0bd881b6')
 provides=('mate-image-viewer')
 conflicts=('mate-image-viewer')
 replaces=('mate-image-viewer')
