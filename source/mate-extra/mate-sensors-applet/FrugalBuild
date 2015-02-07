@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-sensors-applet
-pkgver=1.8.0
+pkgver=1.9.0
 pkgrel=1
 pkgdesc="Display readings from hardware sensors in your MATE panel"
 archs=('i686' 'x86_64')
@@ -15,6 +15,6 @@ _F_mate_glib="y"
 _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-sha1sums=('0526400ad88b306fc74b2e219ce4aea34476577f')
+sha1sums=('8316eda541b80c233677b8e8263d32d47e9eb8ce')
 
 # optimization OK
