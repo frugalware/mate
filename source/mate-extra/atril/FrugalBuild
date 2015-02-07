@@ -5,11 +5,11 @@ options+=('asneeded')
 
 pkgname=atril
 pkgver=1.9.2
-pkgrel=1
+pkgrel=2
 pkgdesc="The MATE Document viewer"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('gtk+3' 'gail' 'mate-icon-theme' 'mate-file-manager' \
+depends=('gtk+3' 'gail' 'mate-icon-theme' 'caja' \
 	'poppler-glib' 'webkit-gtk3')
 makedepends=('mate-common' 'intltool' 'itstool')
 _F_mate_desktop="y"
