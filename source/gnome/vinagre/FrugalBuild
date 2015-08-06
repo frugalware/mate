@@ -8,10 +8,10 @@ USE_SPICE=${USE_SPICE:-"n"}
 # add protocol support Spice
 
 pkgname=vinagre
-pkgver=3.12.2
-pkgrel=1
+pkgver=3.16.1
+pkgrel=3
 pkgdesc="VNC Client for the GNOME Desktop"
-depends=('vte3' 'libsecret' 'gtk3-vnc')
+depends=('vte3>=0.40.2-2' 'libsecret' 'gtk3-vnc' 'freerdp')
 makedepends=('vala' 'intltool' 'itstool' 'gobject-introspection')
 options=('scriptlet')
 _F_gnome_glib="y"
@@ -23,9 +23,9 @@ _F_gnome_ext=".tar.xz"
 Finclude gnome gnome-scriptlet
 groups=('gnome')
 archs=('i686' 'x86_64')
-sha1sums=('a011a35ddc316b991e90b3caa451af749c4cf2f3')
+sha1sums=('ffd1aa92b14e4c8050143742299f42e246d71058')
 unset MAKEFLAGS
-Fconfopts+=" --enable-rdp --enable-ssh"
+Fconfopts+=" --enable-ssh --enable-rdp"
 replaces=('tsclient')
 if Fuse $USE_SPICE; then
         depends=("${depends[@]}" "spice-gtk")

@@ -2,7 +2,7 @@
 # Maintainer: Melko <melko@frugalware.org>
 
 pkgname=calligra-l10n
-pkgver=2.8.6
+pkgver=2.9.5
 pkgrel=1
 pkgdesc="Dummy package."
 url="http://www.calligra-suite.org"
@@ -11,39 +11,37 @@ depends=()
 makedepends=("${makedepends[@]}" "kdelibs>=$_F_kde_ver" "kdelibs-compiletime>=$_F_kde_ver")
 groups=('locale-extra')
 archs=('i686' 'x86_64')
-up2date="lynx -dump ftp://ftp.kde.org/pub/kde/stable/calligra-latest | grep 'tar' | sed -n 's/.*calligra-\(.*\).tar.xz.*/\1/;1p'"
+up2date="lynx -dump $_F_kde_mirror/stable/calligra-latest | grep 'tar' | sed -n 's/.*calligra-\(.*\).tar.xz.*/\1/;1p'"
 source=()
 subpkgs=()
-sha1sums=('42845f439487a6b9a211b6b9b78551785cb9bc3b' \
-          'e91e026ae6fc05666b91a8b0a5857b4567ee1655' \
-          'ff02ae3a99ed115f5db1f6e4238ca1ecb43f673b' \
-          'c800b169fb9669d9b65afc59148a7cb957a4be06' \
-          '6e4ed6033b725c7cafb1d27125633859e5979d75' \
-          'abb7b394a10f1db1e0247bd77e2ac4936edbadc9' \
-          '1a3a9d6831b68beff2565e35ae35de411e463d14' \
-          '2d02d825745894545b953b9b9fa5da6930953ccc' \
-          '0365fb9f2e5af6f085bb8be8a20530bd65b3c533' \
-          'a29141b97583c53fbd157aeaa7fbe7c374e81015' \
-          'd3a70abcf0912c8f7843a9d62d831b0f8c9a66b9' \
-          '46bf4611e8403bd9aa3569789fc089a7ffb26ec3' \
-          'b1f58767e52b6db6a23a641a193adb4eb8b5bca2' \
-          'd539f542bd769b3c1f8809d1575572379c0c99cb' \
-          '701bfc1ced9a2b2049760cbd3830f9d8e32c37e6' \
-          'e2bdb789d01d71b6d33da54b874e372156480db3' \
-          '06a1abd399f9f36eacfca2c13ddc4c7dfc829787' \
-          '5256e84cc7942d1a4916726a5a5a4fb2ee71ffad' \
-          '7ab13165b9a28f70ae9edb04b58b637aa20fbb1d' \
-          '5229a266da63b637d4be762406b1aa2a5ede1b81' \
-          'de6409d5a3eed8035888e1ce11c71e92de5eb730' \
-          '5b00c1a3730cea5abb4ddb9b3657d5ff1a28e3db' \
-          '7b801b55255459a967da935e2330d3302bf58b08' \
-          'd8b8c2abf8e7b6e53e2c8f6c7e256a8452deecf0' \
-          '8f6d3d6f985c46ee1a0cba1ebaa8cfe6ac470839' \
-          'c2b2c0c1d707030ee2d6de6e944f50816a9e206e' \
-          'bf4680d1dd414a6dbdfb81bb551082b16336193e' \
-          '98f43eb5d34af9a4c2283266cc5c97dcee27d07b' \
-          '27ad3a1ae4c03afc2fac4947c9035288b6761b69' \
-          '441c0f2f22c85e429b546b87072d3121be379b9f')
+sha1sums=('39a7111f616994579f115876b4257758e739b76a' \
+          '86fc926dbb85ef556811b3c2bddf50fc387cc114' \
+          'cc04d4183615ce827d61091b66da33e50aac6939' \
+          '7798f3f804112e8d027215cabacf1aba2a8f924e' \
+          '222b1a8a4ef41da5c172727f9f945cc80419af37' \
+          '4b8e6d631815175e30701d299d62a849a67960e2' \
+          '61b09dffce7bceb63b516be1398851bf6e1335e9' \
+          'e706cde46e8e2430c9083e14dde3ab86687d5e04' \
+          '42e14571eefe5f7b940d8f80de5d4ca44fc02e9f' \
+          '1d051d772098c680115bbe2e31ea4cf389f41b45' \
+          'aacdfeab78fc60045de268a338230b4d7f8ca37e' \
+          'd28675c61e3c7ce97e922d35174d441995cb8e50' \
+          'b84c5733a8ad3bfdf05849475c8ebed8417ddcff' \
+          '000ead670f3d867885c835eba4e74f4532a2892f' \
+          'deb8c09afc5899c87efbab54ba94d086112eb0f4' \
+          '07edf21498a2417bbcc616c0566ad4ab11295d6b' \
+          '91f9f53668b89dd3ab8a2d990cf60de0d9c4b922' \
+          '1a306ac84e6e9cf88e93f6a8cbaed4ae49677b7d' \
+          '974ca2ccaa5cfd2440d4dccd87cce30ddffa82d2' \
+          '2187096f1fcc5917d5f4357d29faf1222a1db224' \
+          '1174d85d39a7b639e834a58e28f86f2f7418d6c5' \
+          'cea6649d6735f8ea790927f6b5d6be70fe4d631b' \
+          'ee3dd1d560a30cd06eeaa752b65e08fe03331d4d' \
+          '45acd0d7b0450cd54770813fa5ef8fd31b61d59e' \
+          '713f94e578ae050d0a9295531ae89897dc32f622' \
+          '7c84e4e492904eff80ed3bfaf2cfe81801158eba' \
+          '1842311d3b441f40535bbcb2a8c6f036573202c2' \
+          'ff1aa826c2ab0fa73bafdf56fa38302d15ab6340')
 
 ## this part is almost the same of kde-l10n
 kde_l10n_language_from_tag() {
@@ -100,7 +98,6 @@ kde_l10n_lang_add "el"
 kde_l10n_lang_add "en_GB"
 kde_l10n_lang_add "es"
 kde_l10n_lang_add "et"
-kde_l10n_lang_add "eu"
 kde_l10n_lang_add "fi"
 kde_l10n_lang_add "fr"
 kde_l10n_lang_add "gl"
@@ -109,7 +106,6 @@ kde_l10n_lang_add "it"
 kde_l10n_lang_add "ja"
 kde_l10n_lang_add "kk"
 kde_l10n_lang_add "nb"
-kde_l10n_lang_add "nds"
 kde_l10n_lang_add "nl"
 kde_l10n_lang_add "pl"
 kde_l10n_lang_add "pt"

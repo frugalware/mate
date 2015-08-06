@@ -1,28 +1,29 @@
 # Compiling Time: 1.91 SBU
-# Maintainer: kikadf <kikadf.01@gmail.com>
+# Contributor: kikadf <kikadf.01@gmail.com>
 # Contributor: Janos Kovacs <janny@frugalware.org>
 # Contributor: voroskoi <voroskoi@frugalware.org>
+# Maintainer: DeX77 <dex77@frugalware.org>
 
 options+=('asneeded')
 
 pkgname=mutt-devel
 _F_archive_name=mutt
 pkgver=1.5.23
-pkgrel=3
+pkgrel=4
 pkgdesc="A small but very powerful text-based mail client development release."
 url="http://www.mutt.org/"
 license="GPL"
 groups=('network-extra')
 archs=('i686' 'x86_64')
-depends=('openssl>=1.0.0' 'gdbm>=1.10' 'libidn' 'gpgme' 'ncurses' 'cyrus-sasl' 'krb5')
+depends=('openssl>=1.0.0' 'gdbm>=1.10' 'libidn>=1.30' 'gpgme' 'ncurses' 'cyrus-sasl' 'krb5')
 makedepends=('texlive')
 conflicts=('mutt' 'mutt-ng')
 replaces=('mutt' 'mutt-ng')
 provides=('mutt' 'mutt-ng')
 backup=(etc/Muttrc)
-_F_sourceforge_name="$_F_archive_name"
-_F_sourceforge_dirname="$_F_archive_name"
-Finclude sourceforge
+up2date="Flasttar $url/download.html"
+source="https://bitbucket.org/mutt/mutt/downloads/mutt-$pkgver.tar.gz"
+
 # Applied mutt-ng patches, some replaced by debian's patches
 source+=(sidebar.patch sidebar-compose.patch nntp.patch aw.listreply.diff
          nion.sidebar-color.diff sidebar-utf8.patch cd.source_multiple.diff

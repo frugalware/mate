@@ -1,21 +1,21 @@
 # Compiling Time: 6.84 SBU
-# Maintainer: Elentir <elentir@frugalware.org>
+# Maintainer: Melko <melko@frugalware.org>
 
 options+=('asneeded')
 
 pkgname=r
-pkgver=3.1.1
+pkgver=3.2.1
 pkgrel=1
 pkgdesc="R is a language and environment for statistical computing and graphics."
 url="http://www.r-project.org"
-depends=('libgfortran' 'libxt' 'libjpeg>=8a' 'libpng>=1.4.1' 'libtiff' 'xz>=5.0.3' 'pango>=1.30.1' 'lapack')
+depends=('libgfortran' 'libxt' 'libjpeg>=8a' 'libpng>=1.4.1' 'libtiff' 'xz>=5.0.3' 'pango>=1.30.1' 'lapack' 'tk')
 makedepends=('gcc-gfortran')
 groups=('xapps-extra')
 archs=('i686' 'x86_64')
 _F_archive_name="R"
 source=("http://cran.r-project.org/src/base/R-3/$_F_archive_name-$pkgver.tar.gz")
 up2date="Flasttar http://cran.r-project.org/src/base/R-3/"
-sha1sums=('e974ecc92e49266529e8e791e02a80c75e50b696')
+sha1sums=('74476c4d356f227bf0f17c8c21e63459861fbc93')
 Fconfopts="--libdir=/usr/lib --enable-R-shlib --enable-R-static-lib --with-lapack --with-blas"
 unset MAKEFLAGS
 

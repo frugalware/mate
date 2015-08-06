@@ -1,19 +1,19 @@
-# Compiling Time: 0.49 SBU
+# Compiling Time: 0.51 SBU
 # Maintainer: Slown <slown@frugalware.org>
 
 options+=('asneeded')
 
 pkgname=yaz
-pkgver=5.9.0
+pkgver=5.14.4
 pkgrel=1
 pkgdesc="A toolkit supporting the development ofZ39.50/SRW/SRU clients and servers"
 url="http://www.indexdata.com/yaz"
-depends=('openssl' 'libxslt>=1.1.28' 'icu4c' 'xz')
+depends=('openssl' 'libxslt>=1.1.28' 'icu4c>=55.1' 'xz')
 groups=('devel-extra')
 archs=('i686' 'x86_64')
 up2date="Flasttar $url"
 source=(http://ftp.indexdata.dk/pub/yaz/$pkgname-$pkgver.tar.gz)
-sha1sums=('da0c504ebfe71c7191af6ff5b361fac41c4a287c')
+sha1sums=('1665f460be14ed61eb51f6d88cdb7aeecc34c41e')
 
 build () {
 	Fcd

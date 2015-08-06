@@ -5,11 +5,11 @@
 options+=('asneeded')
 
 pkgname=evolution-ews
-pkgver=3.12.9
+pkgver=3.16.3
 pkgrel=1
 pkgdesc="MS Exchange integration through Exchange Web Services"
-depends=('evolution-data-server>=3.12.0' 'evolution>=3.12.0' 'libsoup' \
-		'evolution-data-server-ldap>=3.12.0' 'libkrb5' 'openssl>=1.0.0')
+depends=('evolution-data-server>=3.16.0' 'evolution>=3.16.0' 'libsoup' \
+		'evolution-data-server-ldap>=3.16.0' 'libkrb5' 'openssl>=1.0.0')
 makedepends=('gtk-doc>=1.20' 'perl-xml-parser' 'openldap' 'intltool' 'krb5')
 groups=('gnome')
 archs=('i686' 'x86_64')
@@ -20,6 +20,6 @@ Fconfopts+=" --disable-gtk-doc --with-krb5=/usr --with-internal-lzx"
 conflicts=('evolution-exchange')
 replaces=('evolution-exchange')
 provides=('evolution-exchange')
-sha1sums=('20ece3d584f911df53e1cbb4f6ccdcd556667a19')
+sha1sums=('8165e96c9647a64a8cdc138a206a6d6ddc303918')
 
 # optimization OK

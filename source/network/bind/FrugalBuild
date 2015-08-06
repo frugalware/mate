@@ -4,8 +4,8 @@
 options+=('asneeded')
 
 pkgname=bind
-pkgver=9.9.6
-pkgextraver=-P1
+pkgver=9.9.7
+pkgextraver=
 pkgrel=1
 pkgdesc="DNS server and utilities"
 url="http://www.isc.org/index.pl?/sw/bind/"

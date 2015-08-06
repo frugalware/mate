@@ -2,7 +2,7 @@
 # Maintainer: Slown <slown@frugalware.org>
 
 pkgname=librarian-puppet
-pkgver=2.0.1
+pkgver=2.2.1
 pkgrel=1
 pkgdesc="Librarian-puppet is a bundler for your puppet infrastructure"
 url="http://www.librarian-puppet.com"
@@ -10,4 +10,4 @@ depends=('ruby-thor>=0.15')
 groups=('devel-extra')
 archs=('i686' 'x86_64')
 Finclude gem
-sha1sums=('5dc9408974d58a33a98c4411f60c8c11efa9c373')
+sha1sums=('c7312b40e1fffb5ce32cc1d9e3a51afd5b1cb9b1')

@@ -1,16 +1,16 @@
-# Compiling Time: 0.63 SBU
+# Compiling Time: 0.76 SBU
 # Maintainer: Slown <slown@frugalware.org>
 
 pkgname=ucommon
-pkgver=6.3.0
+pkgver=6.4.4
 pkgrel=1
 pkgdesc="A light-weight C++ library to facilitate using C++ design patterns"
 url="http://www.gnutelephony.org/index.php/GNU_uCommon_C++"
-depends=('openssl' 'zlib')
+depends=('openssl' 'zlib' 'gnutls>=3.4.2')
 groups=('lib-extra')
 archs=('i686' 'x86_64')
 up2date="Flasttar http://ftp.gnu.org/gnu/commoncpp"
 source=(http://ftp.gnu.org/pub/gnu/commoncpp/$pkgname-$pkgver.tar.gz)
-sha1sums=('b578e197cf6e731c0e5465167f32a29ea5f2cd28')
+sha1sums=('dc2b378307098dd04472edf899705e125b714bb1')
 
 # optimization OK

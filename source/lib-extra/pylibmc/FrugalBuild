@@ -1,14 +1,14 @@
-# Compiling Time: 0.02 SBU
+# Compiling Time: 0.01 SBU
 # Maintainer: Slown <slown@frugalware.org>
 
 pkgname=pylibmc
-pkgver=1.4.1
+pkgver=1.5.0
 pkgrel=1
 pkgdesc="Quick and small memcached client for Python"
 depends=('libmemcached' 'python' 'zlib')
 groups=('lib-extra')
 archs=('i686' 'x86_64')
 Finclude pypi
-sha1sums=('e47769537037845a53e97ec6f95524229776be24')
+sha1sums=('092a8c13a8a6a94f66202c582cb1994523b25593')
 
 # optimization OK

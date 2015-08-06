@@ -5,13 +5,13 @@
 options+=('asneeded')
 
 pkgname=qmmp
-pkgver=0.7.6
-pkgrel=2
+pkgver=0.8.4
+pkgrel=1
 pkgdesc="A music player written in Qt that supports Winamp skins."
 url="http://qmmp.ylsoftware.com"
 depends=('libqtgui' 'libqtnetwork' 'libuuid' 'libsamplerate' \
-	'libqtdbus' 'ffmpeg>=1.0' 'taglib' 'libmpcdec' 'libmad' \
-	'libcdio>=0.83' 'wavpack' 'libmms' 'curl' 'libpulse>=5.0')
+	'libqtdbus' 'ffmpeg>=2.5.1' 'taglib' 'libmpcdec' 'libmad' \
+	'libcdio>=0.83' 'wavpack' 'libmms' 'curl' 'libpulse>=6.0')
 makedepends=('qt4-linguist' 'libqt3support')
 groups=('xmultimedia-extra')
 archs=('i686' 'x86_64')
@@ -21,10 +21,13 @@ _F_archive_grepv="svn"
 Finclude cmake gnome-scriptlet
 up2date="Flasttar $url/files/"
 source=($url/files/$pkgname-$pkgver.tar.bz2)
-sha1sums=('0b3dde3c48a818e2f964f2deabf4df872f272f36')
+sha1sums=('d1c8bee56c08260c20ab8bea9744ad98b249e6b7')
 
 build() {
 	CMake_build
+	if [[ "$CARCH" == "x86_64" ]]; then
+		Fmv usr/lib64 usr/lib
+	fi
 	Fbuild_gnome_scriptlet
 }
 

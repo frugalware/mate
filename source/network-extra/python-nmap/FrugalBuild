@@ -2,17 +2,17 @@
 # Maintainer: Slown <slown@frugalware.org>
 
 pkgname=python-nmap
-pkgver=0.3.4
-pkgrel=2
+pkgver=0.4.0
+pkgrel=1
 pkgdesc="python-nmap is a Python library which helps in using the nmap port scanner."
 url="http://xael.org/norman/python/$pkgname"
 depends=('nmap')
-makedepends=('python-3.0>=3.3.0-2')
+makedepends=('python-3.0')
 groups=('network-extra')
 archs=('i686' 'x86_64')
 up2date="Flasttar $url"
 source=($url/$pkgname-$pkgver.tar.gz)
-sha1sums=('0a3651ab41418707e53d37498d757534e4c68edf')
+sha1sums=('98ca07d1731d0497aabd8ad10fca97fd6f4a2b90')
 
 build() {
 	Fcd

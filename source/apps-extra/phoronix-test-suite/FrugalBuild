@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=phoronix-test-suite
-pkgver=5.2.1
+pkgver=5.8.1
 pkgrel=1
 pkgdesc="The most comprehensive testing and benchmarking platform available for Linux."
 url="http://www.phoronix-test-suite.com/"
@@ -13,17 +13,16 @@ groups=('apps-extra')
 archs=('i686' 'x86_64')
 up2date="Flasttar http://www.phoronix.net/downloads/$pkgname/releases/"
 source=(http://www.phoronix.net/downloads/$pkgname/releases/$pkgname-$pkgver.tar.gz)
-sha1sums=('1328ff293879bf18009228ffc856ae7b9c4c6af5')
+sha1sums=('cf885f7799465065194f12f444dffbfb90d0ce0b')
 
 
 build() {
   Fcd phoronix-test-suite
 
-  #sed -i 's#-packages.sh#-packages.sh --asdeps#' pts-core/objects/client || Fdie/pts_external_dependencies.php
   Fmkdir usr/share/phoronix-test-suite
 
   sed -e "s/^export PTS_DIR=.*/export PTS_DIR=\/usr\/share\/phoronix-test-suite/g" -i phoronix-test-suite || Fdie
   Fexerel $pkgname /usr/bin/$pkgname
-  rm -f $Fdestdir/usr/share/phoronix-test-suite/pts/etc/scripts/package-build-* || Fdie
-  cp -r pts-core/ $Fdestdir/usr/share/phoronix-test-suite/ || Fdie
+  Frm usr/share/phoronix-test-suite/pts/etc/scripts/package-build-*
+  Fcprel pts-core/ usr/share/phoronix-test-suite/
 }

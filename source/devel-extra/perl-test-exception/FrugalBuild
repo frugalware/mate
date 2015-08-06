@@ -3,9 +3,9 @@
 # Contributor: Zsolt Szalai <xbit@frugalware.org>
 
 _F_perl_name=Test-Exception
-_F_perl_author=E/EX/EXODIST
-pkgver=0.35
+_F_perl_author=E/ET/ETHER
+pkgver=0.38
 pkgdesc="Test exception based code"
 Finclude perl
-sha1sums=('83e78d5a31a3d8c9e4a8553ece307720edf6c6ac')
+sha1sums=('1ee8767621e3dea40373bdae326cf7220903f617')
 archs=(${archs[@]} 'x86_64')

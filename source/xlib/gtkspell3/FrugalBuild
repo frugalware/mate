@@ -5,8 +5,8 @@ options+=('asneeded')
 
 pkgname=gtkspell3
 _F_sourceforge_dirname='gtkspell'
-pkgver=3.0.4
-pkgrel=3
+pkgver=3.0.7
+pkgrel=1
 pkgdesc="On-the-fly spell checking for GtkTextView widgets"
 url="http://gtkspell.sourceforge.net/"
 depends=('gtk+3' 'enchant')
@@ -14,12 +14,8 @@ makedepends=('intltool' 'itstool' 'gobject-introspection' 'vala')
 groups=('xlib')
 archs=('i686' 'x86_64')
 Finclude sourceforge
-sha1sums=('f30ebb52fd4be605a8845cc0a5b48a55da20fc70')
+sha1sums=('04490dfdc3f2aef3be15123c27b1c535ae438316')
 Fconfopts+=" --disable-static --enable-vala"
-
-conflicts=('gtkspell-lib')
-provides=('gtkspell-lib')
-replaces=('gtkspell-lib')
 
 build() {
 	Fcd
