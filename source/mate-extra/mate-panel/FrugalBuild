@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-panel
-pkgver=1.9.4
+pkgver=1.10.1
 pkgrel=1
 pkgdesc="The MATE Desktop panel applets"
 archs=('i686' 'x86_64')
@@ -13,13 +13,14 @@ makedepends=('mate-common' 'intltool' 'itstool')
 depends=('mate-session-manager' 'gsettings-desktop-schemas' 'dconf' \
 	'desktop-file-utils' 'gobject-introspection' 'icon-naming-utils' \
        	'libcanberra-gtk' 'libmateweather' 'mate-desktop' 'mate-menus' \
-	'startup-notification' 'libxres' 'librsvg' 'libwnck' 'networkmanager')
+	'startup-notification' 'libxres' 'librsvg' 'libwnck' 'networkmanager' \
+	'tdb')
 _F_mate_desktop="y"
 _F_mate_glib="y"
 __F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-sha1sums=('d67664c62235c91e9fa6267fc07b7a89b9b1efe9')
+sha1sums=('e82156c5b732c22779ffcb03bbbcd3c01e3ce146')
 Fconfopts+=' --enable-network-manager --with-gtk=3.0'
 
 # optimization OK
