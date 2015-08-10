@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-control-center
-pkgver=1.9.1
+pkgver=1.10.1
 pkgrel=1
 pkgdesc="The MATE Control center"
 archs=('i686' 'x86_64')
@@ -18,7 +18,7 @@ _F_mate_glib="y"
 _F_mate_mime="y"
 Finclude mate mate-scriptlet
 Fconfopts+=" --with-help-formats=txt --with-gtk=3.0"
-sha1sums=('b2ed6c0a65b90438165e93d7b001e7060773408b')
+sha1sums=('2e15fd7d550b4157402d721f6eaffd145ab6c374')
 
 build()
 {
