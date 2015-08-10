@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-screensaver
-pkgver=1.9.2
+pkgver=1.10.2
 pkgrel=1
 pkgdesc="Screen saver and locker for mate"
 groups=('mate-extra')
@@ -12,7 +12,7 @@ archs=('i686' 'x86_64')
 depends=('libxscrnsaver' 'gtk+3' 'dbus-glib' 'mate-desktop' 'mate-menus')
 makedepends=('mate-common' 'intltool')
 Finclude mate
-sha1sums=('53a996b24e36f1aab7333476d2375035ff43f393')
+sha1sums=('75715c27ded17df37390df13fc7d4452419a87d3')
 Fconfopts+=' --with-gtk=3.0'
 
 # optimization OK
