@@ -4,21 +4,21 @@
 options+=('asneeded')
 
 pkgname=marco
-pkgver=1.9.4
+pkgver=1.10.1
 pkgrel=1
 pkgdesc="The MATE Desktop window manager"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('gtk+3' 'zenity')
-makedepends=('desktop-file-utils' 'gsettings-desktop-schemas' 'libcanberra-gtk' \
-	'mate-common' 'mate-desktop' 'libsm' 'libsoup' 'libxdamage' \
-	'intltool' 'pkgconfig' 'itstool')
+depends=('gtk+3' 'zenity' 'tdb')
+makedepends=('desktop-file-utils' 'gsettings-desktop-schemas' \
+  'libcanberra-gtk' 'mate-common' 'mate-desktop' 'libsm' 'libsoup' \
+  'libxdamage' 'intltool' 'pkgconfig' 'itstool')
 rodepends=('gtk+3-theme-frugalware')
 _F_mate_desktop="y"
 _F_mate_glib="y"
 Finclude mate mate-scriptlet
 Fconfopts+=" --with-gnu-ld --with-gtk=3.0 --with-x"
-sha1sums=('6a1a19a43e76e046e6da142983ec91dd1922fe4a')
+sha1sums=('aada9e6e34d9aa86771021ffca14d4f1482f2310')
 
 build()
 {
