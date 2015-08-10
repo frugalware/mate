@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-menus
-pkgver=1.9.1
+pkgver=1.10.0
 pkgrel=1
 pkgdesc="Displays menus for MATE Desktop"
 archs=('i686' 'x86_64')
@@ -13,6 +13,6 @@ depends=('gobject-introspection' 'python')
 makedepends=('mate-common' 'intltool')
 Finclude mate
 Fconfopts+=" --enable-python --enable-introspection=yes"
-sha1sums=('0a0e820b27be5542c5e73f40bdabba56b98d71b9')
+sha1sums=('04662fc22aec5c37755029b8f8d8c56390c49807')
 
 # optimization OK
