@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=engrampa
-pkgver=1.9.2
+pkgver=1.10.1
 pkgrel=1
 pkgdesc="The MATE File archiver"
 archs=('i686' 'x86_64')
@@ -16,5 +16,5 @@ _F_mate_glib="y"
 _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-sha1sums=('c4f7543e22ce46822b7e191933614deb62f218f0')
+sha1sums=('280daa5ef6c660d1d1c5da33ee2952b12095ff08')
 Fconfopts+=' --with-gtk=3.0'
