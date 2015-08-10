@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-common
-pkgver=1.9.90
+pkgver=1.10.0
 pkgrel=1
 pkgdesc="Mate common build files"
 archs=('i686' 'x86_64')
@@ -12,4 +12,4 @@ groups=('mate-extra')
 depends=('gtk-doc')
 makedepends=('automake')
 Finclude mate
-sha1sums=('fc650f497338f93595f6177fa9036c10c3fc2f76')
+sha1sums=('8fa8603168e839f645603f52757cab5e3b4d8595')
