@@ -4,7 +4,7 @@
 options=('asneeded')
 
 pkgname=mate-power-manager
-pkgver=1.9.0
+pkgver=1.10.1
 pkgrel=1
 pkgdesc="MATE power management service"
 archs=('i686' 'x86_64')
@@ -15,7 +15,7 @@ _F_mate_desktop="y"
 _F_mate_iconcache="y"
 _F_mate_glib="y"
 Finclude mate mate-scriptlet
-sha1sums=('3653add02e09679763fd98f8443cedb1557a4429')
+sha1sums=('f94a387d2652a9447dfabb55076b215b687321cc')
 Fconfopts+=' --with-gtk=3.0'
 
 # optimization OK
