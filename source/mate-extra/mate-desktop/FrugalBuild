@@ -4,12 +4,12 @@
 options+=('asneeded')
 
 pkgname=mate-desktop
-pkgver=1.9.4
-pkgrel=3
+pkgver=1.10.1
+pkgrel=1
 pkgdesc="Library with common API for various MATE modules"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('unique1' 'hicolor-icon-theme' 'gvfs-obexftp' \
+depends=('unique1' 'hicolor-icon-theme' 'gnome-vfs-obexftp' \
 	'startup-notification' 'libtool' 'dconf' 'gtk+3')
 makedepends=('intltool' 'itstool')
 _F_mate_iconcache="y"
@@ -18,7 +18,7 @@ _F_mate_desktop="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
 Fconfopts+=" --with-gtk=3.0"
-sha1sums=('9f48dc440e240e5be048373f3011cf5d5273df86')
+sha1sums=('471adce0cb38610d41f2d69418feb84d4299f15a')
 replaces=('libmatekeyring' 'mate-doc-utils' 'mate-keyring' \
 	'libmatewnck' 'mate-character-map')
 
