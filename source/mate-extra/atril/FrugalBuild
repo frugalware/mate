@@ -4,8 +4,8 @@
 options+=('asneeded')
 
 pkgname=atril
-pkgver=1.9.2
-pkgrel=2
+pkgver=1.10.1
+pkgrel=1
 pkgdesc="The MATE Document viewer"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
@@ -17,7 +17,7 @@ _F_mate_glib="y"
 _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-sha1sums=('98415a33adebeb6eb6df6f7dfac6eb30471eebc6')
+sha1sums=('5560b9d4f7c5ba07390cc0217453b0e9986542e4')
 Fconfopts+=" --with-gtk=3.0"
 
 # optimization OK
