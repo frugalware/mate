@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-polkit
-pkgver=1.9.0
+pkgver=1.10.0
 pkgrel=1
 pkgdesc="Integrates polkit authentication for MATE Desktop"
 archs=('i686' 'x86_64')
@@ -12,7 +12,7 @@ groups=('mate-extra')
 depends=('gtk+3')
 makedepends=('mate-common' 'intltool' 'polkit' 'gobject-introspection')
 Finclude mate
-sha1sums=('ae2379c99bc4e6a7346774d9bcbe9b6f88b6c4b9')
+sha1sums=('8e8e641a1e6867a5543b5cf25505db0f5c9a4663')
 Fconfopts+=' --with-gtk=3.0'
 
 # optimization OK
