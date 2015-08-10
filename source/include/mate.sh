@@ -26,7 +26,7 @@ if [ -z $_F_mate_name ] ; then
 fi
 
 if [ -z $_F_mate_ver ] ; then
-    _F_mate_ver="1.9"
+    _F_mate_ver="1.10"
 fi
 
 if [ -z $_F_mate_ext ] ; then
