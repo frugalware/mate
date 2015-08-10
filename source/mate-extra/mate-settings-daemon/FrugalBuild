@@ -1,10 +1,10 @@
 # Compiling Time: 0.79 SBU
-# Maintainer: Anthonhy Jorion <pingax@frugalware.org>
+# Maintainer: Anthony Jorion <pingax@frugalware.org>
 
 options+=('asneeded')
 
 pkgname=mate-settings-daemon
-pkgver=1.9.6
+pkgver=1.10.1
 pkgrel=1
 pkgdesc="MATE Desktop settings daemon"
 archs=('i686' 'x86_64')
@@ -19,6 +19,6 @@ options=('scriptlet')
 Finclude mate mate-scriptlet
 Fconfopts+=" --enable-polkit --with-gnu-ld --with-x --with-nssdb
 	     --enable-gstreamer --with-gtk=3.0"
-sha1sums=('cac2b4ac96346302486ff7c239a79f656042cb1b')
+sha1sums=('32f9b1e6a899607b69e8d489817fa5dea0f9a4a3')
 
 # optimization OK
