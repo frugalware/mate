@@ -5,17 +5,19 @@ options+=('asneeded')
 
 pkgname=mate-notification-daemon
 pkgver=1.10.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Notification daemon for MATE Desktop"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
 depends=('desktop-file-utils' 'gsettings-desktop-schemas' 'icon-naming-utils' \
-	'libnotify' 'mate-desktop' 'libcanberra-gtk' 'libwnck' 'tdb')
+	'libnotify' 'mate-desktop' 'libcanberra-gtk2' 'libwnck2' 'tdb')
 makedepends=('mate-common' 'intltool')
 _F_mate_desktop="y"
 _F_mate_glib="y"
 _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-sha1sums=('64508049b99de6d6c7209c5cad53c305d4fe59a7')
-Fconfopts+=' --with-gtk=3.0'
+source=($source libcanberra.patch)
+sha1sums=('64508049b99de6d6c7209c5cad53c305d4fe59a7' \
+          '8c395410049a58b66c456027858d55ef60168309')
+Fconfopts+=' --with-gtk=2.0'
