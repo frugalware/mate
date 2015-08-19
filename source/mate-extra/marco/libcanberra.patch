@@ -1,0 +1,22 @@
+--- src/core/bell.c.orig	2015-08-19 22:03:35.509381206 +0200
++++ src/core/bell.c	2015-08-19 22:03:45.281282787 +0200
+@@ -52,7 +52,7 @@
+ #include "bell.h"
+ #include "screen-private.h"
+ #include "prefs.h"
+-#include <canberra-gtk.h>
++#include <canberra-gtk2.h>
+ 
+ /**
+  * Flashes one entire screen.  This is done by making a window the size of the
+--- src/core/workspace.c.orig	2015-08-19 22:03:56.599168796 +0200
++++ src/core/workspace.c	2015-08-19 22:04:05.962074493 +0200
+@@ -29,7 +29,7 @@
+ #include "prefs.h"
+ #include <X11/Xatom.h>
+ #include <string.h>
+-#include <canberra-gtk.h>
++#include <canberra-gtk2.h>
+ 
+ void meta_workspace_queue_calc_showing   (MetaWorkspace *workspace);
+ static void set_active_space_hint        (MetaScreen *screen);
