@@ -5,17 +5,17 @@ options+=('asneeded')
 
 pkgname=libmatekbd
 pkgver=1.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Librairies for MATE kbd"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('gsettings-desktop-schemas' 'libxklavier' 'gtk+3')
+depends=('gsettings-desktop-schemas' 'libxklavier' 'gtk+2')
 makedepends=('desktop-file-utils' 'mate-common' 'intltool')
 _F_mate_desktop="y"
 _F_mate_glib="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-Fconfopts+=" --with-gtk=3.0"
+Fconfopts+=" --with-gtk=2.0"
 sha1sums=('d4e5b69dde4f57bbd01029bee2f414be98882897')
 
 
