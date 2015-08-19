@@ -5,20 +5,22 @@ options+=('asneeded')
 
 pkgname=mate-control-center
 pkgver=1.10.1
-pkgrel=1
+pkgrel=2
 pkgdesc="The MATE Control center"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
 depends=('dconf' 'xscreensaver' 'marco' 'mate-menus' \
        'mate-settings-daemon' 'mate-desktop' 'libxxf86misc' 'libxkbfile' \
-       'libcanberra-gtk' 'shared-mime-info' 'unique')
+       'libcanberra-gtk2' 'shared-mime-info' 'unique1')
 makedepends=('mate-common' 'intltool' 'desktop-file-utils' 'itstool')
 _F_mate_desktop="y"
 _F_mate_glib="y"
 _F_mate_mime="y"
 Finclude mate mate-scriptlet
-Fconfopts+=" --with-help-formats=txt --with-gtk=3.0"
-sha1sums=('2e15fd7d550b4157402d721f6eaffd145ab6c374')
+source=($source libcanberra.patch)
+Fconfopts+=" --with-help-formats=txt --with-gtk=2.0"
+sha1sums=('2e15fd7d550b4157402d721f6eaffd145ab6c374' \
+          '26beb1196b60df7eb645354df742f3502dc9604a')
 
 build()
 {

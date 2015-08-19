@@ -1,0 +1,11 @@
+--- typing-break/drw-break-window.c.orig	2015-08-19 22:32:31.709894317 +0200
++++ typing-break/drw-break-window.c	2015-08-19 22:32:46.320747156 +0200
+@@ -29,7 +29,7 @@
+ #include <gio/gio.h>
+ 
+ #ifdef HAVE_CANBERRA_GTK
+-#include <canberra-gtk.h>
++#include <canberra-gtk2.h>
+ #endif
+ 
+ #include "drwright.h"
