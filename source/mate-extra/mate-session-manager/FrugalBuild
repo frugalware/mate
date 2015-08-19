@@ -5,11 +5,11 @@ options+=('asneeded')
 
 pkgname=mate-session-manager
 pkgver=1.10.2
-pkgrel=1
+pkgrel=2
 pkgdesc="MATE Desktop session manager"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('gsettings-desktop-schemas' 'desktop-file-utils' 'gtk+3' 'dbus-glib' \
+depends=('gsettings-desktop-schemas' 'desktop-file-utils' 'gtk+2' 'dbus-glib' \
        	'dbus-x11' 'upower' 'mate-polkit' 'mate-icon-theme' 'mate-desktop')
 makedepends=('mate-common' 'intltool')
 _F_mate_desktop="y"
@@ -17,7 +17,7 @@ _F_mate_glib="y"
 _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-Fconfopts+=" --enable-ipv6 --with-gtk=3.0 --with-gnu-ld --with-default-wm=marco --disable-upower"
+Fconfopts+=" --enable-ipv6 --with-gtk=2.0 --with-gnu-ld --with-default-wm=marco --disable-upower"
 sha1sums=('66a773e2aa75c4b2f1c29ce64cd01f1cf0589d3b')
 
 # optimization OK
