@@ -1,0 +1,11 @@
+--- mate-panel/nothing.cP.old	2015-08-19 22:15:25.544229795 +0200
++++ mate-panel/nothing.cP	2015-08-19 22:15:51.299970373 +0200
+@@ -10,7 +10,7 @@
+ #include <gdk/gdkkeysyms-compat.h>
+ #define gtk_vbox_new(X, Y) gtk_box_new(GTK_ORIENTATION_VERTICAL, Y)
+ #endif
+-#include <canberra-gtk.h>
++#include <canberra-gtk2.h>
+ 
+ #ifdef CA_CHECK_VERSION
+ #if CA_CHECK_VERSION(0, 13)
