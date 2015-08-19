@@ -5,12 +5,12 @@ options+=('asneeded')
 
 pkgname=mate-settings-daemon
 pkgver=1.10.1
-pkgrel=1
+pkgrel=2
 pkgdesc="MATE Desktop settings daemon"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
 depends=('mate-icon-theme' 'gsettings-desktop-schemas' 'icon-naming-utils' \
-	'clutter-gst' 'gtk+3' 'libmatekbd' 'mate-desktop' 'nss' \
+	'clutter-gst' 'gtk+2' 'libmatekbd' 'mate-desktop' 'nss' \
        	'mate-polkit' 'libsm' 'dconf')
 makedepends=('mate-common' 'intltool')
 _F_mate_iconcache="y"
@@ -18,7 +18,7 @@ _F_mate_glib="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
 Fconfopts+=" --enable-polkit --with-gnu-ld --with-x --with-nssdb
-	     --enable-gstreamer --with-gtk=3.0"
+	     --enable-gstreamer --with-gtk=2.0"
 sha1sums=('32f9b1e6a899607b69e8d489817fa5dea0f9a4a3')
 
 # optimization OK
