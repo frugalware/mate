@@ -4,13 +4,14 @@
 options+=('asneeded')
 
 pkgname=python-caja
-pkgver=1.9.0
+pkgver=1.10.0
 pkgrel=1
 pkgdesc="Python2 bindings for libcaja"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
 depends=('caja' 'pygobject')
+makedepends=('intltool')
 Finclude mate
-sha1sums=('bbcf7513b7c06221c2b1078c089ac42ccbc537eb')
+sha1sums=('6e9fa98bd3ee82106534dad3a464aebe436fa0a0')
 
 # optimization OK
