@@ -4,12 +4,12 @@
 options+=('asneeded')
 
 pkgname=eom
-pkgver=1.9.1
+pkgver=1.10.3
 pkgrel=1
 pkgdesc="Eye of MATE image viewer"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('mate-desktop' 'libart_lgpl' 'glib2' 'gtk+3' 'librsvg' 'exempi' \
+depends=('mate-desktop' 'libart_lgpl' 'glib2' 'gtk+2' 'librsvg' 'exempi' \
        	'libexif' 'lcms' 'pygtk' 'dbus-glib' 'libjpeg' 'libxml2' 'mate-icon-theme')
 makedepends=('mate-common' 'intltool' 'desktop-file-utils' 'itstool')
 _F_mate_desktop="y"
@@ -17,11 +17,11 @@ _F_mate_glib="y"
 _F_mate_iconcache="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-sha1sums=('309fa9fcf373298637a9bc87677dfa7c0bd881b6')
+sha1sums=('b5c4b9a921183af37cfdf7cc91c3144138c6b2d5')
 provides=('mate-image-viewer')
 conflicts=('mate-image-viewer')
 replaces=('mate-image-viewer')
-Fconfopts+=" --with-gtk=3.0"
+Fconfopts+=" --with-gtk=2.0"
 
 build()
 {
