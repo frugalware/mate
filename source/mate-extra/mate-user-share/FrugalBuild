@@ -1,19 +1,23 @@
 # Compiling Time: 0.11 SBU
 # Maintainer: Anthony Jorion <pingax@frugalware.org>
 
+options+=('asneeded')
+
 pkgname=mate-user-share
-pkgver=1.9.0
+pkgver=1.10.0
 pkgrel=1
 pkgdesc="mate-user-share is a small package that binds together various free \
 	software projects to bring easy to use user-level file sharing to the\
 	masses."
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('gtk+3' 'libnotify' 'libcanberra-gtk' 'caja')
+depends=('gtk+2' 'libnotify' 'libcanberra-gtk2' 'caja' 'tdb')
 makedepends=('intltool' 'itstool')
 _F_mate_glib="y"
 _F_mate_iconcache="y"
 options=('scriptlet')
-Fconfopts+=" --with-gtk=3.0"
+Fconfopts+=" --with-gtk=2.0"
 Finclude mate mate-scriptlet
-sha1sums=('3878e5f2b74c87bee21646850b109389ca634e84')
+source=($source libcanberra.patch)
+sha1sums=('2f6dd6a05e6c1894272b6a0d7348e709196bb947' \
+          'f6f6bb520bbad45aa026a3c5288c800d4b25b57b')
