@@ -5,19 +5,21 @@ options=('asneeded')
 
 pkgname=mate-media
 pkgver=1.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="MATE media-utils"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('gstreamer' 'libpulse' 'unique' 'gtk+3' 'libcanberra-gtk' \
+depends=('gstreamer' 'libpulse' 'unique' 'gtk+2' 'libcanberra-gtk2' \
  'gst-plugins-base' 'mate-panel' 'libmatemixer')
 makedepends=('mate-common' 'intltool' 'itstool')
 _F_mate_desktop="y"
 _F_mate_glib="y"
 _F_mate_iconcache="y"
 Finclude mate mate-scriptlet
+source=($source libcanberra.patch)
 Fconfopts+=" --enable-gstmix --enable-gst-mixer-applet --enable-pulseaudio \
-	--enable-gstreamer --with-gtk=3.0"
-sha1sums=('702b6aa48312eb58891b6cca887bd112e7f0b86c')
+	--enable-gstreamer --with-gtk=2.0"
+sha1sums=('702b6aa48312eb58891b6cca887bd112e7f0b86c' \
+          'ece01b91b0049f8d4475c221d2448d42cbcc1164')
 
 # optimization OK
