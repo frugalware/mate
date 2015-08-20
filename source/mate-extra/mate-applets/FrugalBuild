@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-applets
-pkgver=1.9.1
+pkgver=1.10.3
 pkgrel=1
 pkgdesc="Applets for MATE panel"
 archs=('i686' 'x86_64')
@@ -15,7 +15,7 @@ _F_mate_iconcache="y"
 _F_mate_glib="y"
 options=('scriptlet')
 Finclude mate mate-scriptlet
-Fconfopts+=" --disable-stickynotes"
-sha1sums=('d142212ad90d71107c41462f111cf7812f6b951c')
+Fconfopts+=" --with-gtk=2.0 --disable-stickynotes"
+sha1sums=('6c566fc1aa682bdae71c3775a87d15637b166419')
 
 # optimization OK
