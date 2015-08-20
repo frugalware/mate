@@ -5,17 +5,20 @@ options=('asneeded')
 
 pkgname=mate-power-manager
 pkgver=1.10.1
-pkgrel=1
+pkgrel=2
 pkgdesc="MATE power management service"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('mate-control-center' 'mate-panel' 'libnotify' 'libgnome-keyring')
+depends=('mate-control-center' 'mate-panel' 'libnotify' 'libgnome-keyring' \
+  'libcanberra-gtk2')
 makedepends=('desktop-file-utils' 'mate-common' 'intltool' 'itstool')
 _F_mate_desktop="y"
 _F_mate_iconcache="y"
 _F_mate_glib="y"
 Finclude mate mate-scriptlet
-sha1sums=('f94a387d2652a9447dfabb55076b215b687321cc')
-Fconfopts+=' --with-gtk=3.0'
+source=($source libcanberra.patch)
+sha1sums=('f94a387d2652a9447dfabb55076b215b687321cc' \
+          '9bff9d0585512e96171c592f00570b85d00dae9d')
+Fconfopts+=' --with-gtk=2.0'
 
 # optimization OK

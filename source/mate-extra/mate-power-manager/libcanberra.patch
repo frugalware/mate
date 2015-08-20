@@ -1,0 +1,11 @@
+--- src/gpm-manager.c.orig	2015-08-20 20:41:24.993944124 +0200
++++ src/gpm-manager.c	2015-08-20 20:41:36.736708417 +0200
+@@ -39,7 +39,7 @@
+ #include <gtk/gtk.h>
+ #include <dbus/dbus-glib.h>
+ #include <dbus/dbus-glib-lowlevel.h>
+-#include <canberra-gtk.h>
++#include <canberra-gtk2.h>
+ #include <libupower-glib/upower.h>
+ #include <libnotify/notify.h>
+ 
