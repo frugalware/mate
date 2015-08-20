@@ -4,7 +4,7 @@
 options+=('asneeded')
 
 pkgname=mate-netspeed
-pkgver=1.9.1
+pkgver=1.10.2
 pkgrel=1
 pkgdesc="Applet that shows traffic on a network device"
 archs=('i686' 'x86_64')
@@ -14,6 +14,6 @@ makedepends=('intltool' 'itstool')
 _F_mate_glib="y"
 _F_mate_iconcache="y"
 Finclude mate mate-scriptlet
-sha1sums=('84d30d0b37cdea0d3a84def033270cecf972377b')
+sha1sums=('d140868282415f1bcf067b8d8116fc292aec840d')
 
 # optimization OK
