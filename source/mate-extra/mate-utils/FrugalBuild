@@ -4,19 +4,21 @@
 options+=('asneeded')
 
 pkgname=mate-utils
-pkgver=1.9.1
+pkgver=1.10.2
 pkgrel=1
 pkgdesc="Some utils for MATE"
 archs=('i686' 'x86_64')
 groups=('mate-extra')
-depends=('gtk+3' 'mate-applets' 'libgtop')
+depends=('gtk+2' 'mate-applets' 'libgtop')
 makedepends=('mate-common' 'intltool' 'itstool')
 _F_mate_desktop="y"
 _F_mate_glib="y"
-Fconfopts+=" --with-gtk=3.0 --enable-compile-warnings=no \
+Fconfopts+=" --with-gtk=2.0 --enable-compile-warnings=no \
 	--disable-deprecated"
 Finclude mate mate-scriptlet
-sha1sums=('10871fc0e33f22ad4cde629087f3b85f283df78b')
+source=($source libcanberra.patch)
+sha1sums=('bccd69a31f769f6cba7d77edded2d8a53031b41d' \
+          '0e3fadcaa4de622a455a0866181151537d860767')
 
 build()
 {
