@@ -4,8 +4,8 @@
 options+=('asneeded')
 
 pkgname=mdm
-pkgver=1.8.3
-pkgrel=2
+pkgver=2.0.4
+pkgrel=1
 pkgdesc="MDM Display Manager"
 groups=('mate-extra')
 archs=('i686' 'x86_64')
@@ -29,7 +29,7 @@ source=($source \
     mdm-autologin.pam \
     defaults.conf
 )
-sha1sums=('fab15c52c8e8b9b8d5cdf9e8c91d81dcd26a0f5d' \
+sha1sums=('770a1ba35398936e7b167f6574cfd305a07c86d1' \
           '0dc19ef20e0ecf78ba5bbba77c3898fa83e19aa7' \
           'fc1e1fd88ed1e65a52c505c157c133141caf0369' \
           'b3e426c19e9cc6c8d3f11937d32e855f99c14495' \
